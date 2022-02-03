@@ -1,0 +1,151 @@
+{% extends "_layout.html" %}
+
+{% set title = "главная" %}
+
+{% set root = "" %}
+
+{% set rootHref = "" %}
+
+{% set catalogHref = "href=\"pages/catalog.html\"" %}
+
+{% set newsletterClass = "newsletter-bg" %}
+
+{% block main %}
+<header class="welcome">
+  <h1 class="visually-hidden">
+    Добро пожаловать в Седону.
+  </h1>
+</header>
+
+<div class="">
+  <p class="heading">
+    Седона — небольшой городок в Аризоне, заслуживающий большего!
+  </p>
+
+  <p class="description">
+    Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
+  </p>
+</div>
+
+<ol class="benefits-list">
+  <li class="benefits-item">
+    <h3 class="benefits-header">
+      Настоящий городок
+    </h3>
+
+    <p class="benefits-description">
+      — №1 —
+    </p>
+
+    <p class="benefits-description">
+      Седона — не аттракцион для туристов, там течёт своя жизнь
+    </p>
+
+    <img src="{{ root }}images/sedona-street.jpg" width="800" height="384" alt="Улицы Седоны.">
+
+    <ul class="benefits-list-plus">
+      <li class="benefits-item">
+        <h3 class="benefits-header icon-header icon-header-housing">
+          Жильё
+        </h3>
+
+        <p class="benefits-description">
+          Рекомендуем пожить в настоящем мотеле, всё как в кино!
+        </p>
+      </li>
+
+      <li class="benefits-item">
+        <h3 class="benefits-header icon-header icon-header-eat">
+          Еда
+        </h3>
+
+        <p class="benefits-description">
+          Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+        </p>
+      </li>
+
+      <li class="benefits-item">
+        <h3 class="benefits-header icon-header icon-header-souvenir">
+          Сувениры
+        </h3>
+
+        <p class="benefits-description">
+          Не только китайского, но и настоящего местного производства!
+        </p>
+      </li>
+    </ul>
+  </li>
+
+  <li class="benefits-item">
+    <h3 class="benefits-header">
+      Там есть мост дьявола
+    </h3>
+
+    <p class="benefits-description">
+      — №2 —
+    </p>
+
+    <p class="benefits-description">
+      Да, по нему можно пройти! Если вы осмелитесь, разумеется
+    </p>
+
+    <img src="{{ root }}images/devil-bridge.jpg" width="800" height="384" alt="Мост дьявола.">
+  </li>
+
+  <li class="benefits-item">
+    <h3 class="benefits-header">
+      Небольшаяя площадь
+    </h3>
+
+    <p class="benefits-description">
+      — №3 —
+    </p>
+
+    <p class="benefits-description">
+      Все достопримечательности находятся очень близко
+    </p>
+  </li>
+
+  <li class="benefits-item">
+    <h3 class="benefits-header">
+      Красивая дорога
+    </h3>
+
+    <p class="benefits-description">
+      — №4 —
+    </p>
+
+    <p class="benefits-description">
+      Ехать в Седону из Лас-Вегаса совсем не скучно!
+    </p>
+  </li>
+
+  <li class="benefits-item">
+    <h3 class="benefits-header">
+      Мало туристов
+    </h3>
+
+    <p class="benefits-description">
+      — №5 —
+    </p>
+
+    <p class="benefits-description">
+      Большинство едет в Гранд Каньон и толпится там
+    </p>
+  </li>
+</ol>
+
+<div class="">
+  <p class="heading">
+    Заинтересовались?
+  </p>
+
+  <p class="description">
+    Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+  </p>
+
+  <a class="hotel-search" href="#!">
+    Поиск гостиниц в Седоне
+  </a>
+</div>
+{% endblock %}
